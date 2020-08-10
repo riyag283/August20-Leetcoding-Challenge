@@ -10,4 +10,12 @@ class Solution(object):
         for i in range(n):
             result *= 26
             result += dict1[s[i]]
+            
+        '''Other way
+        result = 0
+        n = len(s)
+        for i in range(n):
+            result += 26**(n-i-1) * dict1[s[i]]
+        '''
+
         return result
